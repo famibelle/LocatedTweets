@@ -2,7 +2,7 @@ library(rjson)
 library(jsonlite)
 
 
-#Add Google Analytics to the Shiny app
+#Add Google Analytics to the Shiny app must be done
 # tags$head(includeScript("google-analytics.js"))
 
 
