@@ -29,8 +29,10 @@ library(ape) # for the phylogenetic dendrogram
 library(ggdendro)
 
 # load all the needed twitter authentication 
-load("twitter.authentication")
-registerTwitterOAuth(twitCred)
+# load("twitter.authentication")
+# registerTwitterOAuth(twitCred) ROAuth is no longer used in favor of httr
+
+setup_twitter_oauth(apikey, apisecret, token, tokensecret)
 
 geocode = "47.5270932,1.8896484,600km" # around France
 
